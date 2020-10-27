@@ -1,0 +1,104 @@
+.openCourse,
+.videoCourse {
+    .header {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .select {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .img {
+            width: 180px;
+            height: 120px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .info {
+            width: calc(100% - 345px);
+            margin-left: 20px;
+
+            h2 {
+                font-size: 16px;
+                color: #000;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 14px;
+                color: #666;
+                margin-bottom: 10px;
+            }
+
+            .tag {
+                display: flex;
+
+                span {
+                    padding: 3px 8px;
+                    background: #ececec;
+                    color: #666;
+                    border-radius: 3px;
+                    font-size: 12px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .w450 {
+            width: calc(100% - 450px);
+        }
+
+        .button {}
+    }
+
+}
+
+[data-theme='compact'] .site-collapse-custom-collapse .site-collapse-custom-panel,
+.site-collapse-custom-collapse .site-collapse-custom-panel {
+    background: #ffffff;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    border: 0px;
+    overflow: hidden;
+}
+
+:global {
+
+    .ant-collapse>.ant-collapse-item>.ant-collapse-header {
+        padding-left: 16px;
+    }
+
+    .ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow {
+        left: 50%;
+        top: auto;
+        bottom: -5px;
+        font-size: 16px;
+    }
+
+    .ant-collapse>.ant-collapse-item {
+        border-color: #f8f8f8;
+        background-color: #ffffff;
+    }
+
+    .ant-collapse,
+    .ant-collapse-content {
+        border-color: #f8f8f8;
+    }
+
+    .ant-collapse-content>.ant-collapse-content-box {
+        background-color: #fafafa;
+    }
+
+    .ant-table-pagination.ant-pagination {
+        margin: 16px 16px 16px 0;
+    }
+
+    .ant-table-thead>tr>th {
+        background: #fff;
+    }
+}
